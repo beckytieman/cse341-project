@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <% include ../includes/header.ejs %>
+</head>
+
+<body>
+  <% include ../includes/nav.ejs %>
+    <div class="jumbotron text-center">
+      <div class="container">
+        <h1>
+          <%= title %>
+        </h1>
+        <p>This is the placeholder for Team Activity 05</p>
+
+        <!-- Change style form -->
+        <form action="/ta05/">
+          <label for="change-style">Choose a color:</label>
+            <select id="change-style" name="change-style">
+              <option value="0">Default</option>
+              <option value="1">Orange</option> <!-- #ffa500 -->
+              <option value="2">Teal</option> <!-- #008080 -->
+              <option value="3">Chocolate</option> <!-- #783f04 -->
+              <option value="4">Magenta</option> <!-- #ff00ff -->
+            </select>
+          <button type="submit">Change</button>
+   </form method="POST">
+      </form>
+
+      <form action="/counter" method="POST">
+        <label for="counter">Increment</label>
+        <input type="hidden" value="1">
+        <button type="submit">Add 1!</button>
+      </form>
+
+      <form action="/counter" method="POST">
+        <label for="counter">Decrement</label>
+        <input type="hidden" value="-1">
+        <button type="submit">Subtract 1!</button>
+      </form></button>
+        </form>
+        
+      </div>
+    </div>
+    <div class="container">
+
+    </div>
+
+
+</body>
+
+</html>
